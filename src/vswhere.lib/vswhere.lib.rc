@@ -1,0 +1,137 @@
+// Microsoft Visual C++ generated resource script.
+//
+
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_E_ARGREQUIRED       "Argument required for: %1$ls"
+    IDS_E_ARGEXPECTED       "Argument expected"
+    IDS_E_UNKNOWNPARAM      "Unknown parameter: %1$ls"
+    IDS_E_INVALIDFORMAT     "Unsupported format: %1$ls"
+    IDS_E_INVALIDVERSION    "The version ""%1$ls"" is not a valid version range"
+    IDS_E_UNEXPECTEDDATE    "The install dates of two instances should not be the same"
+    IDS_E_UNKNOWN           "Unknown error"
+    IDS_E_LEGACY            "The ""legacy"" parameter cannot be specified with either the ""products"" or ""requires"" parameter"
+    IDS_E_ARGINCOMPAT       "The ""%1$ls"" parameter cannot be specified with the ""%2$ls"" parameter"
+    IDS_E_INVALIDPATTERN    "The pattern ""%1$ls"" is invalid"
+    IDS_E_UNSUPPORTEDARG    "Unsupported argument ""%1$ls"" for parameter ""%2$ls"""
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR               "Error"
+    IDS_PROGRAMINFO         "Visual Studio Locator version %1$ls"
+    IDS_PROGRAMINFOEX       "Visual Studio Locator version %1$ls [query version %2$ls]"
+    IDS_COPYRIGHT           "Copyright (C) Microsoft Corporation. All rights reserved."
+    IDS_USAGE               "Usage: %1$ls [options]\
+\n\
+\nOptions:\
+\n  -all           Finds instances in complete, launchable, and incomplete states. By default, only instances\
+\n                 in a complete state - no errors or reboot required - are searched.\
+\n  -prerelease    Also searches prereleases. By default, only releases are searched.\
+\n  -products arg  One or more product IDs to find. Defaults to Community, Professional, and Enterprise.\
+\n                 Specify ""*"" by itself to search all product instances installed.\
+\n                 See https://aka.ms/vs/workloads for a list of product IDs.\
+\n  -requires arg  One or more workload or component IDs required when finding instances.\
+\n                 All specified IDs must be installed unless -requiresAny is specified.\
+\n                 You can specify wildcards including ""?"" to match any one character,\
+\n                 or ""*"" to match zero or more of any characters.\
+\n                 See https://aka.ms/vs/workloads for a list of workload and component IDs.\
+\n  -requiresAny   Find instances with any one or more workload or components IDs passed to -requires.\
+\n  -version arg   A version range for instances to find. Example: [15.0,16.0) will find versions 15.*.\
+\n                 See https://aka.ms/vswhere/versions for more information about versions.\
+\n  -latest        Return only the newest version and last installed.\
+\n  -sort          Sorts the instances from newest version and last installed to oldest.\
+\n                 When used with ""find"", first instances are sorted then files are sorted lexicographically.\
+\n  -legacy        Also searches Visual Studio 2015 and older products. Information is limited.\
+\n                 This option cannot be used with either -products or -requires.\
+\n  -path          Gets the instance for the current path. Not compatible with any other selection option.\
+\n  -format arg    Return information about instances found in a format described below.\
+\n  -property arg  The name of a property to return. Defaults to ""value"" format.\
+\n                 Use delimiters ""."", ""/"", or ""_"" to separate object and property names.\
+\n                 Example: ""properties.nickname"" will return the ""nickname"" property under ""properties"".\
+\n  -include arg   One or more extra properties to include, as described below.\
+\n  -find arg      Returns matching file paths under the installation path. Defaults to ""value"" format.\
+\n                 The following patterns are supported:\
+\n                 ?  Matches any one character except ""\\"".\
+\n                 *  Matches zero or more characters except ""\\"".\
+\n                 ** Searches the current directory and subdirectories for the remaining search pattern.\
+\n  -nocolor       Do not print instances formatted with colors. By default, colors suitable for dark-themed\
+\n                 terminals (common) are output when printing to a terminal but not to a pipe.\
+\n  -nologo        Do not show logo information. Some formats noted below will not show a logo anyway.\
+\n  -utf8          Use UTF-8 encoding (recommended for JSON).\
+\n  -?, -h, -help  Display this help message.\
+\n\
+\n\
+\nExtra properties:\
+\n  packages       Return an array of packages installed in this instance.\
+\n                 Supported only by the ""json"" and ""xml"" formats.\
+\n\
+\nFormats:"
+    IDS_FORMAT_TEXT         "  %1$-13ls  Colon-delimited properties in separate blocks for each instance (default)."
+    IDS_FORMAT_JSON         "  %1$-13ls  An array of JSON objects for each instance (no logo)."
+    IDS_FORMAT_VALUE        "  %1$-13ls  A single property specified by the -property parameter (no logo, no color)."
+    IDS_FORMAT_XML          "  %1$-13ls  An XML data set containing instances (no logo)."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

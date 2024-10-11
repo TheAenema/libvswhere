@@ -1,0 +1,19 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license. See LICENSE.txt in the project root for license information.
+
+version: "2.1"
+services:
+  test:
+    image: microsoft/vssetup:test
+    build: .
+    volumes:
+      - ../bin/${CONFIGURATION:-Debug}:C:/bin:ro
+      - ./Instances:C:/ProgramData/Microsoft/VisualStudio/Packages/_Instances:ro
+      - ./Tests:C:/Tests
+      - C:/VS/Community
+      - C:/VS/Professional
+      - C:/VS/Enterprise
+      - C:/BuildTools
+      - C:/VS/Preview
+    network_mode: none
+    command: -Command Invoke-Pester C:\Tests -EnableExit

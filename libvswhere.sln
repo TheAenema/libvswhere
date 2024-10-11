@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 15.0.26228.4
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vswhere.x64", "src\vswhere\vswhere.vcxproj", "{210864F0-9A29-4479-B830-B802EE3F4D92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{56C3F374-7B54-44F6-85D5-2A7FB595A749} = {56C3F374-7B54-44F6-85D5-2A7FB595A749}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vswhere.lib.x64", "src\vswhere.lib\vswhere.lib.x64.vcxproj", "{56C3F374-7B54-44F6-85D5-2A7FB595A749}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vswhere.tester.x64", "libvswhere.tester.x64.vcxproj", "{8546F551-80FE-49B0-ABE2-9C8498C0B34E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{210864F0-9A29-4479-B830-B802EE3F4D92} = {210864F0-9A29-4479-B830-B802EE3F4D92}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{210864F0-9A29-4479-B830-B802EE3F4D92}.Release|x64.ActiveCfg = Release|x64
+		{210864F0-9A29-4479-B830-B802EE3F4D92}.Release|x64.Build.0 = Release|x64
+		{56C3F374-7B54-44F6-85D5-2A7FB595A749}.Release|x64.ActiveCfg = Release|x64
+		{56C3F374-7B54-44F6-85D5-2A7FB595A749}.Release|x64.Build.0 = Release|x64
+		{8546F551-80FE-49B0-ABE2-9C8498C0B34E}.Release|x64.ActiveCfg = Release|x64
+		{8546F551-80FE-49B0-ABE2-9C8498C0B34E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8B58651-8009-4980-AE0B-69997634A2E9}
+	EndGlobalSection
+EndGlobal
