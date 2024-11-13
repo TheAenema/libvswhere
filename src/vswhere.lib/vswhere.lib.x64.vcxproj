@@ -48,6 +48,10 @@
       <SDLCheck>true</SDLCheck>
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
