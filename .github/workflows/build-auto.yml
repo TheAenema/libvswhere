@@ -1,0 +1,36 @@
+name: Build (Windows)
+
+on: [push]
+
+jobs:
+  build:
+    name: Deploy for Windows64
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: List Available MSVC Versions
+        run: Get-ChildItem 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC'
+
+      - name: Set Up MSVC (Visual Studio 2022)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Restore NuGet Packages
+        run: nuget restore libvswhere-no-test.sln
+
+      - name: Build using MSVC
+        run: |
+          msbuild libvswhere-no-test.sln /p:Configuration=Release /p:Platform=x64
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: libvswhere-win64
+          path: bin/
+          retention-days: 60
