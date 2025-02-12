@@ -69,9 +69,6 @@ END
 STRINGTABLE
 BEGIN
     IDS_ERROR               "Error"
-    IDS_PROGRAMINFO         "Visual Studio Locator version %1$ls"
-    IDS_PROGRAMINFOEX       "Visual Studio Locator version %1$ls [query version %2$ls]"
-    IDS_COPYRIGHT           "Copyright (C) Microsoft Corporation. All rights reserved."
     IDS_USAGE               "Usage: %1$ls [options]\
 \n\
 \nOptions:\
