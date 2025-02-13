@@ -223,7 +223,7 @@ namespace jenova::libraries
 }
 
 // C-Style Export
-extern "C" __declspec(dllexport) const char* GetVisualStudioInstanceMetadata(const char* arguments)
+extern "C" __declspec(dllexport) const char* GetVisualStudioInstancesMetadata(const char* arguments)
 {
     return _strdup(jenova::libraries::GetVisualStudioInstancesMetadata(arguments).c_str());
 }
